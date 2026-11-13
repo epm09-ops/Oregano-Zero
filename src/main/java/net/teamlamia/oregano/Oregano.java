@@ -65,8 +65,9 @@ public class Oregano {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (eventGetTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ALMOND);
+            event.accept(ModItems.YOGHURT);
         }
     }
 

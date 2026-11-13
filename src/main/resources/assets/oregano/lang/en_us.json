@@ -10,5 +10,6 @@
   "examplemod.configuration.logDirtBlock": "Log Dirt Block",
   "examplemod.configuration.magicNumberIntroduction": "Magic Number Text",
   "examplemod.configuration.magicNumber": "Magic Number",
-  "item.oregano.ancient_oregano": "Ancient Oregano"
+  "item.oregano.almond": "Almond",
+  "item.oregano.yoghurt": "Yoghurt"
 }
