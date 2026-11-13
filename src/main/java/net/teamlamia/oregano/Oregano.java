@@ -1,5 +1,6 @@
 package net.teamlamia.oregano;
 
+import net.teamlamia.oregano.blocks.ModBlocks;
 import net.teamlamia.oregano.item.ModItems;
 import org.slf4j.Logger;
 
@@ -51,6 +52,7 @@ public class Oregano {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -68,6 +70,11 @@ public class Oregano {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ALMOND);
             event.accept(ModItems.YOGHURT);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.PALO_VERDE_LEAVES);
+            event.accept(ModBlocks.PALO_VERDE_LOG);
         }
     }
 

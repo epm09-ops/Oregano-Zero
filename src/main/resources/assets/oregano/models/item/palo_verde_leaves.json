@@ -1,0 +1,6 @@
+{
+  "parent": "oregano:block/palo_verde_leaves",
+  "textures": {
+    "all": "oregano:block/palo_verde_leaves"
+  }
+}
